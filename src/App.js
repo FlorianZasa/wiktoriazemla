@@ -16,15 +16,19 @@ function App() {
   }, [location])
 
   function getNavbarStyle() {
+    const defaultColors = { white: '#ffffff', primary: '#000000' }; // Define fallback colors
+    const safeColors = colors || defaultColors;
+    
     switch (currentRoute) {
       case '/':
-        return { backgroundColor: colors.white, color: 'black'};
+        return { backgroundColor: safeColors.white, color: 'black' };
       case '/about':
-        return { backgroundColor: colors.primary, color: colors.white};
+        return { backgroundColor: safeColors.primary, color: safeColors.white };
       default:
-        return { backgroundColor: colors.white, color: 'black'};
+        return { backgroundColor: safeColors.white, color: 'black' };
     }
   }
+  
 
   return (
     <div>

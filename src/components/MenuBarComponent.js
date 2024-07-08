@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import './MenuBarComponent.css'
 
 function MenuBarComponent({ backgroundColor, textColor}) {
-  console.log(backgroundColor, textColor);
   return (
     <div style={{
       display: 'flex',
