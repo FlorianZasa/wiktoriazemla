@@ -1,7 +1,10 @@
 import React from 'react'
 import './ModalComponent.css'
+import useBodyScrollLock from '../utils/useBodyScrollLock';
 
 function ModalComponent({ isOpen, onClose, children }) {
+    useBodyScrollLock(isOpen);
+
     if (!isOpen) return null;
 
     return (

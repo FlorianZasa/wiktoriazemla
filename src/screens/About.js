@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PageSubtitleComponent from '../components/PageSubtitleComponent'
-import { colors } from '../assets/colors'
 import './About.css'
 
 import WikiImage from '../assets/Wiki.png';
@@ -27,6 +26,11 @@ function About() {
         setIsCodeModalOpen(true)
     }
 
+    function onChangedCode(e) {
+        setCode(e.target.value);
+        setError(null);
+    }
+
     function handleCodeSubmit(e) {
         e.preventDefault();
         if (code === process.env.REACT_APP_SECRET_CODE) {
@@ -46,34 +50,42 @@ function About() {
                 .catch(() => setError('Download failed. Please try again.'));
         } else {
             setError('Incorrect Password!')
+            setCode('')
         }
     }
+
+    useEffect(() => {
+        setCode(null)
+        setError(null)
+    }, [isCodeModalOpen])
     
     return (
         <div className="container">
         
             <ModalComponent isOpen={isCodeModalOpen} onClose={() => setIsCodeModalOpen(false)}>
-                <h2>Download Code for file:</h2>
+                <PageSubtitleComponent title="One moment yet..." size="small" />
                 <div style={{width: '100%'}}>
-                    <form onSubmit={handleCodeSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                    <form onSubmit={handleCodeSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                        <label>Please enter here the code to be able to access this file.</label>
+                        
                         <input
                             type="password"
                             value={code}
-                            onChange={(e) => setCode(e.target.value)}
+                            onChange={onChangedCode}
                             placeholder='Enter the code...'
                             style={{
                                 padding: '.5rem',
                                 fontSize: '20px',
-                                border: '1px solid #ccc',
+                                border: error ? '2px solid red' : '1px solid #ccc',
                                 borderRadius: '4px'
-                              }}
+                            }}
                         />
                         <div style={{display: 'flex', justifyContent: 'right'}}>
-                            <button type="submit" style={styles.button}>Submit</button>
+                            <button type="submit" style={styles.button} disabled={error !== null}>Submit</button>
                         </div>
                     </form>
                 </div>
-            {error && <p>{error}</p>}
+            {error && <p style={{color: "red"}}>{error}</p>}
             </ModalComponent>
          
             <div className="subcontainer">
