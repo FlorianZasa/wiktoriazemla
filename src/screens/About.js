@@ -30,7 +30,7 @@ function About() {
     function handleCodeSubmit(e) {
         e.preventDefault();
         if (code === process.env.REACT_APP_SECRET_CODE) {
-            window.open("https://github.com/FlorianZasa/wiktoriazemla/files/test.txt", '_blank');
+            window.open("https://github.com/FlorianZasa/wiktoriazemla/blob/master/files/test.txt", '_blank');
             setIsCodeModalOpen(false);
         } else {
             console.log(code + " is not " + process.env.REACT_APP_SECRET_CODE);
