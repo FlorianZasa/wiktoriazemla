@@ -30,14 +30,25 @@ function About() {
     function handleCodeSubmit(e) {
         e.preventDefault();
         if (code === process.env.REACT_APP_SECRET_CODE) {
-            window.open("https://raw.githubusercontent.com/FlorianZasa/wiktoriazemla/master/files/test.txt", '_blank');
-            setIsCodeModalOpen(false);
+            fetch("https://raw.githubusercontent.com/FlorianZasa/wiktoriazemla/master/files/test.txt")
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'test.txt';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    setIsCodeModalOpen(false);
+                })
+                .catch(() => setError('Download failed. Please try again.'));
         } else {
-            console.log(code + " is not " + process.env.REACT_APP_SECRET_CODE);
             setError('Incorrect Password!')
         }
     }
-
+    
     return (
         <div className="container">
         
