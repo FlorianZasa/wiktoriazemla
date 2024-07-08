@@ -21,6 +21,8 @@ function App() {
         return { backgroundColor: colors.white, color: 'black'};
       case '/about':
         return { backgroundColor: colors.primary, color: colors.white};
+      default:
+        return { backgroundColor: colors.white, color: 'black'};
     }
   }
 
