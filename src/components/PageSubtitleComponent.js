@@ -9,7 +9,7 @@ function PageSubtitleComponent({ title, size='big', centered=false }) {
             justifyContent: centered && 'center'
         }}>
             <h2 style={{
-                borderBottom: size === 'big' ? `12px solid ${colors.primary}` : `10px solid ${colors.primary}`,
+                borderBottom: size === 'big' ? `12px solid ${colors.secondary}` : `10px solid ${colors.secondary}`,
                 textAlign: 'center',
                 width: 'fit-content',
                 borderRadius: 4,

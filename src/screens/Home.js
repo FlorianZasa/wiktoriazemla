@@ -13,6 +13,7 @@ import PageSubtitleComponent from '../components/PageSubtitleComponent';
 
 import './Home.css'
 import { styles } from '../assets/styles';
+import CircleComponent from '../components/CircleComponent';
 
 
 function Home() {
@@ -26,6 +27,10 @@ function Home() {
         <img className="hero-img" src={WikiImage} style={{border: `16px solid ${colors.secondary}`}}/>
       </div>
 
+      <div style={{ position: 'relative' }}>
+        <CircleComponent size={100} left={-40} top={-120} />
+      </div>
+      
       <div className= 'container'>
         <div style={{width: "100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2rem', padding: '2rem 0 2rem 0'}}>
             <PageSubtitleComponent title="So what exactly do I do?" />

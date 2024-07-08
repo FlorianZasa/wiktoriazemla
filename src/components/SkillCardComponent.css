@@ -1,0 +1,13 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .skills-grid > *:nth-child(4),
+  .skills-grid > *:nth-child(5) {
+    grid-column: span 3;
+    width: calc(66.67% - 1rem);
+    justify-self: center;
+  }

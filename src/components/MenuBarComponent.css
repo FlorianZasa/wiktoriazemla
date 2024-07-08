@@ -1,18 +1,8 @@
-.nav-bar {
-    display: flex;
-    padding-right: 6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    justify-content: flex-end;
-    background-color: var(--background-color);
-}
-
 .menu-btn {
     padding: .4rem 1.2rem .4rem 1.2rem;
     border-radius: 10px;
     font-weight: 700;
     text-decoration: none;
-    color: black;
 }
 
 @media screen and (max-width: 1164px) {
