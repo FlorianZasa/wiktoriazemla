@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wiktoriazemla/static/css/main.50fb3f15.css",
-    "main.js": "/wiktoriazemla/static/js/main.10c5d00b.js",
+    "main.css": "/wiktoriazemla/static/css/main.b8e3abbf.css",
+    "main.js": "/wiktoriazemla/static/js/main.eb2c68d7.js",
     "static/js/453.bbbcf6af.chunk.js": "/wiktoriazemla/static/js/453.bbbcf6af.chunk.js",
     "static/media/project1.png": "/wiktoriazemla/static/media/project1.b7051e45f343f8dbae9d.png",
     "static/media/project4.png": "/wiktoriazemla/static/media/project4.94c228758a8d28afbb7c.png",
@@ -46,12 +46,12 @@
     "static/media/istok-web-cyrillic-ext-400-normal.woff": "/wiktoriazemla/static/media/istok-web-cyrillic-ext-400-normal.aa8d5ff90fc248899177.woff",
     "static/media/istok-web-cyrillic-ext-700-normal.woff": "/wiktoriazemla/static/media/istok-web-cyrillic-ext-700-normal.1d9e187c5149933b4e36.woff",
     "index.html": "/wiktoriazemla/index.html",
-    "main.50fb3f15.css.map": "/wiktoriazemla/static/css/main.50fb3f15.css.map",
-    "main.10c5d00b.js.map": "/wiktoriazemla/static/js/main.10c5d00b.js.map",
+    "main.b8e3abbf.css.map": "/wiktoriazemla/static/css/main.b8e3abbf.css.map",
+    "main.eb2c68d7.js.map": "/wiktoriazemla/static/js/main.eb2c68d7.js.map",
     "453.bbbcf6af.chunk.js.map": "/wiktoriazemla/static/js/453.bbbcf6af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50fb3f15.css",
-    "static/js/main.10c5d00b.js"
+    "static/css/main.b8e3abbf.css",
+    "static/js/main.eb2c68d7.js"
   ]
 }
