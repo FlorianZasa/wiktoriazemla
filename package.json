@@ -1,7 +1,7 @@
 {
   "name": "wiktoria-zemla-portfolio",
-  "version": "0.1.0",
-  "homepage": "https://FlorianZasa.github.io/wiktoriazemla",
+  "version": "1.0.0",
+  "homepage": "https://wiktoriazemla.com",
   "private": true,
   "dependencies": {
     "@fontsource/istok-web": "^5.0.20",
