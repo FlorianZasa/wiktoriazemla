@@ -1,7 +1,7 @@
 {
   "name": "wiktoria-zemla-portfolio",
   "version": "1.0.0",
-  "homepage": "https://wiktoriazemla.com",
+  "homepage": "wiktoriazemla.com",
   "private": true,
   "dependencies": {
     "@fontsource/istok-web": "^5.0.20",
