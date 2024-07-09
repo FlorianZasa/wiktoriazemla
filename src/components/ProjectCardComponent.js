@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function ProjectCardComponent({ img, heading, text }) {
+function ProjectCardComponent({ to, img, heading }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
+    <Link
+      to={to} 
       style={{ 
         position: 'relative',
         display: 'flex', 
@@ -38,11 +40,11 @@ function ProjectCardComponent({ img, heading, text }) {
           transition: 'opacity 0.3s ease',
           opacity: isHovered ? 1 : 0
         }}>
-          <h3>{heading}</h3>
-          <p>{text}</p>
+          <h2>{heading}</h2>
+          <p>Click for more information!</p>
         </div>
       )}
-    </div>
+    </Link>
   );
 }
 

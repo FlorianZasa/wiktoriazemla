@@ -24,7 +24,8 @@ p {
 }
 
 .subcontainer {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   flex: 1;

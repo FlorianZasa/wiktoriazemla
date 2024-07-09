@@ -1,0 +1,38 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "E-learning For Kids (EFK)",
+        "expertise": "Content Designer",
+        "platforms": ["MacOS", "Windows"],
+        "deliverables": ["Content Assets"],
+        "website": "Math World - EFK",
+        "meta": "Klare Koek",
+        "year": "2022/Present",
+        "imagePath": "assets/data/images/project1.png"
+      },
+      {
+        "id": 2,
+        "name": "Quizzy - Improve communication",
+        "expertise": "Product Design",
+        "platforms": ["MacOS", "Windows"],
+        "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
+        "website": "",
+        "meta": "Thesis Project",
+        "year": "2024",
+        "imagePath": "assets/data/images/project2.png"
+      },
+      {
+        "id": 4,
+        "name": "Mediajungle - Redesign",
+        "expertise": "UX/UI Design",
+        "platforms": ["MacOS", "Windows"],
+        "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
+        "website": "Mediajungle",
+        "meta": "Internship: Web Design",
+        "year": "2023",
+        "imagePath": "assets/data/images/project1.png"
+      }
+    ]
+  }
+  

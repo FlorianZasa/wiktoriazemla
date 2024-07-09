@@ -7,6 +7,7 @@ import FooterComponent from './components/FooterComponent';
 import { useEffect, useState } from 'react';
 import { colors } from './assets/colors';
 import ReactGA from 'react-ga4';
+import Project from './screens/Project';
 
 
 function App() {
@@ -26,11 +27,11 @@ function App() {
     
     switch (currentRoute) {
       case '/':
-        return { backgroundColor: safeColors.white, color: 'black' };
+        return { backgroundColor: safeColors.background, color: 'black' };
       case '/about':
         return { backgroundColor: safeColors.primary, color: safeColors.white };
       default:
-        return { backgroundColor: safeColors.white, color: 'black' };
+        return { backgroundColor: safeColors.background, color: 'black' };
     }
   }
   
@@ -41,6 +42,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/proj/:id" element={<Project />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <FooterComponent />
