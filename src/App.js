@@ -11,6 +11,7 @@ import ReactGA from 'react-ga4';
 
 function App() {
   ReactGA.initialize('G-LNG96WYLYF');
+  ReactGA.initialize('G-48F3DTVXHS');
 
   const [currentRoute, setCurrentRoute] = useState("/");
   const location = useLocation();
