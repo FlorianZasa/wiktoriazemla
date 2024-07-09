@@ -9,8 +9,8 @@ function Project2Content() {
     return (
         <div>
             <div className="subcontainer">
-                <div style={{ display: 'flex', gap: '4rem' }}>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text}}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem' }}>
+                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                         <PageSubtitleComponent title="Introduction" size="small" />
                         <p style={{ color: colors.text }}>
                             As a former student of the Internationale Schakelklas (ISK), I have experienced firsthand the challenges of integrating into a group when language barriers are present. ISK schools are designed for children aged 12-18 who do not yet speak Dutch, providing them with the necessary language skills to transition to regular Dutch education within two years. This personal insight inspired me to develop a tool to enhance cooperation and the use of the Dutch language within the classroom. To address this issue, I explored various group dynamics and analyzed current communication between students. This research aimed to create targeted team-building activities that encourage students to speak Dutch. The goal was to establish an interactive learning environment that reduces language barriers and motivates students to converse in Dutch with their peers.
@@ -18,7 +18,7 @@ function Project2Content() {
                             This project is a final project that sums up my 4 years of study in the degree of communication and multimedia design at NHL Stenden University of Applied Sciences in Leeuwarden.
                         </p>
                     </div>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text}}>
+                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                         <PageSubtitleComponent title="Problem overview" size="small" />
                         <p style={{ color: colors.text }}>
                             The main problem I aimed to address is the unhealthy group dynamics in ISK classrooms, where language barriers often lead to exclusion and poor communication among students. Drawing from my own experiences and observations, I realized that many students struggle to integrate and form friendships because they tend to speak only their native languages. This issue is particularly significant in ISK settings where students come from diverse linguistic backgrounds. By focusing on team-building activities that require the use of Dutch, I sought to create a tool that encourages students to work together towards common goals, thereby improving their language skills and social cohesion.
@@ -39,8 +39,8 @@ function Project2Content() {
             <hr></hr>
 
             <div className="subcontainer">
-                <div style={{ display: 'flex', gap: '4rem', alignItems: 'center' }}>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text}}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                         <PageSubtitleComponent title="Solution" size="small" />
                         <p style={{ color: colors.text }}>
                         The solution I developed is called Quizzy, an interactive game designed to improve communication and group dynamics in ISK classrooms. Quizzy uses a combination of quizzes and game cards to foster teamwork and Dutch language use among students aged 12-18.
@@ -50,7 +50,9 @@ function Project2Content() {
                         The teacher, or Quizzymaster, plays a crucial role in guiding the game and maintaining a balanced dynamic. The Quizzymaster oversees the gameplay, ensures fair play, and provides hints when necessary.
                         </p>
                     </div>
-                    <img src={Solution} alt="solution design" style={{ height: '30rem', objectFit: 'cover' }} />
+                    <div style={{width: '35rem'}}>
+                        <img src={Solution} alt="solution design" style={{ width: '100%', objectFit: 'cover' }} />
+                    </div>
                 </div>
             </div>
 

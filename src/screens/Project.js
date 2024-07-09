@@ -37,20 +37,22 @@ function Project() {
             <p style={{color: colors.text, fontSize:'12px'}}>{project.meta} - {project.year}</p>
             <PageSubtitleComponent title={project.name} />
          
-            <div style={{display: 'flex', justifyContent: 'space-between', alinItems: 'center', marginBottom: '2rem'}}>
-                <div>
+            <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alinItems: 'center', marginBottom: '2rem', gap: '1rem'}}>
+                <div style={{minWidth: '200px'}}>
                     <p><strong>Expertise:</strong></p>
                     <span>{project.expertise}</span>
                 </div>
-                <div>
+                <div style={{minWidth: '200px'}}>
                     <p><strong>Platforms:</strong></p>
                     <span>{project.platforms.join(', ')}</span>
                 </div>
-                <div>
+                <div style={{minWidth: '200px'}}>
                     <p><strong>Deliverables:</strong></p>
                     <span>{project.deliverables.join(', ')}</span>
                 </div>
-                <a href={project.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
+                <div style={{minWidth: '200px'}}>
+                    <a href={project.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
+                </div>
             </div>
 
 
