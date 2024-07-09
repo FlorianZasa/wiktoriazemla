@@ -1,0 +1,2 @@
+(self.webpackChunkwiktoria_zemla_portfolio=self.webpackChunkwiktoria_zemla_portfolio||[]).push([[598],{5653:(e,t,r)=>{"use strict";r.r(t);var a=r(6004),o=r(4111),l=r(579);test("renders learn react link",(()=>{(0,a.XX)((0,l.jsx)(o.default,{}));const e=a.nj.getByText(/learn react/i);expect(e).toBeInTheDocument()}))},2634:()=>{}}]);
+//# sourceMappingURL=598.8f57df27.chunk.js.map
