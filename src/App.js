@@ -6,8 +6,12 @@ import MenuBarComponent from './components/MenuBarComponent';
 import FooterComponent from './components/FooterComponent';
 import { useEffect, useState } from 'react';
 import { colors } from './assets/colors';
+import ReactGA from 'react-ga4';
+
 
 function App() {
+  ReactGA.initialize('G-LNG96WYLYF');
+
   const [currentRoute, setCurrentRoute] = useState("/");
   const location = useLocation();
 
