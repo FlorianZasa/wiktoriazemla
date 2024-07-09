@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwiktoria_zemla_portfolio=self.webpackChunkwiktoria_zemla_portfolio||[]).push([[681],{681:(o,e,t)=>{t.r(e),t.d(e,{default:()=>a});const a={}}}]);
+//# sourceMappingURL=681.44dbe87c.chunk.js.map

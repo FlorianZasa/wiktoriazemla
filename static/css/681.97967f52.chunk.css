@@ -1,0 +1,2 @@
+.flex-container{align-items:center;display:flex;flex-wrap:nowrap;gap:4rem}.text-content{flex:1 1 300px;min-width:300px}.overview-image{flex-shrink:0;min-width:20rem;object-fit:cover;width:30rem}@media (max-width:768px){.flex-container{flex-wrap:wrap}.text-content{flex-basis:100%}.overview-image{margin:0 auto;max-width:30rem;width:100%}}
+/*# sourceMappingURL=681.97967f52.chunk.css.map*/
