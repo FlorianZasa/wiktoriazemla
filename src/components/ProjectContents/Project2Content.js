@@ -39,7 +39,7 @@ function Project2Content() {
             <hr></hr>
 
             <div className="subcontainer">
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: '4rem' }}>
                     <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                         <PageSubtitleComponent title="Solution" size="small" />
                         <p style={{ color: colors.text }}>
