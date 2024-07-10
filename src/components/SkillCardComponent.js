@@ -16,7 +16,7 @@ function SkillCardComponent({imgSrc, title, text}) {
         maxWidth: 300
       }}>
         <img src={imgSrc} alt="Alternative" style={{ height: '200px', width: 'auto', objectFit: 'cover' }} />
-        <PageSubtitleComponent title={title} size={'small'} />
+        <PageSubtitleComponent title={title} size={'small'} centered />
         <p style={{fontSize: '16px'}}>{text}</p>
       </div>
     )

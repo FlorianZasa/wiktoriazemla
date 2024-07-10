@@ -13,7 +13,6 @@ import PageSubtitleComponent from '../components/PageSubtitleComponent';
 
 import './Home.css'
 import { styles } from '../assets/styles';
-import CircleComponent from '../components/CircleComponent';
 
 
 function Home() {
@@ -21,14 +20,12 @@ function Home() {
     <div>
       <div className="hero-container">
         <div  className="hero-blue-container"style={{ backgroundColor: colors.primary }}>
+          <div className="hero-heading">
             <h1 style={{ color: colors.background }}>Hi!👋 I’m Wiktoria, a</h1>
             <h1 style={{ color: colors.background }}>passionate UX/UI Designer</h1>
+          </div>
         </div>
         <img className="hero-img" src={WikiImage} style={{border: `16px solid ${colors.secondary}`}}/>
-      </div>
-
-      <div style={{ position: 'relative' }}>
-        <CircleComponent size={100} left={-40} top={-120} />
       </div>
 
       <div className= 'container'>

@@ -10,7 +10,12 @@
     padding-left: 5rem;
     padding-top: 11rem;
     padding-bottom: 11rem;
+    padding-right: 4rem;
     width: 68%
+}
+
+.hero-heading {
+    margin-right: 10rem;
 }
 
 .hero-img {
@@ -33,7 +38,7 @@ h1 {
     font-size: 48px
 }
 
-@media screen and (max-width: 1164px) {
+@media screen and (max-width: 700px) {
     .hero-img {
         position: static;
         transform: none;
@@ -48,13 +53,16 @@ h1 {
         display: flex;
         justify-content: center;
         background-color: var(--primary-color);
-        border-radius: 0 0 1rem 1rem;
         padding: 2rem;
     }
 
     .hero-blue-container {
         padding: 2rem;
         width: 100%;
+    }
+
+    .hero-heading {
+        margin: 0;
     }
 
     .project-grid-container {

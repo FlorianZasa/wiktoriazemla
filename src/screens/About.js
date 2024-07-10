@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import PageSubtitleComponent from '../components/PageSubtitleComponent'
 import './About.css'
 
-import WikiImage from '../assets/Wiki.png';
+import Wiki2Image from '../assets/Wiki2.png';
 
 import URImage from '../assets/SkillImages/URImage.png';
 import UXImage from '../assets/SkillImages/UXImage.png';
@@ -14,7 +14,6 @@ import SoftImage from '../assets/SkillImages/SoftImage.png';
 import ButtonComponent from '../components/ButtonComponent';
 import { styles } from '../assets/styles';
 import SkillCardComponent from '../components/SkillCardComponent';
-import CircleComponent from '../components/CircleComponent';
 import ModalComponent from '../components/ModalComponent';
 
 function About() {
@@ -99,15 +98,11 @@ function About() {
                             e-learning apps, redesigned websites, and built brand identities. Known for my creativity and dedication, I’m excited to start my professional journey in UX/UI design, continually refining my skills in a dynamic, collaborative environment
                         </span>
                     </div>
-                    <img src={WikiImage} className="profile-image" alt="Profile" />
+                    <img src={Wiki2Image} className="profile-image" alt="Profile" />
                 </div>
                 <div style={{display: 'flex', gap: '2rem'}}>
                     <ButtonComponent text="Download my CV" onClick={() => handleDownload()} />
                 </div>
-            </div>
-
-            <div style={{ position: 'relative' }}>
-                <CircleComponent className="deko-circle" size={'6rem'} left={-120} top={-30} />
             </div>
 
             <div className="subcontainer">
