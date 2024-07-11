@@ -7,7 +7,7 @@ import FooterComponent from './components/FooterComponent';
 import { useEffect, useState } from 'react';
 import { colors } from './assets/colors';
 import Project from './screens/Project';
-import PiwikPro from '@piwikpro/react-piwik-pro';
+import { PageViews } from '@piwikpro/react-piwik-pro';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    PiwikPro.trackPageView();
+    PageViews.trackPageView();
   }, [location]);
 
   function getNavbarStyle() {
