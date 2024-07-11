@@ -7,6 +7,7 @@ import FooterComponent from './components/FooterComponent';
 import { useEffect, useState } from 'react';
 import { colors } from './assets/colors';
 import Project from './screens/Project';
+import PiwikPro from '@piwikpro/react-piwik-pro';
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
     window.scrollTo(0,0)
     setCurrentRoute(location.pathname)
   }, [])
+
+  useEffect(() => {
+    PiwikPro.trackPageView();
+  }, [location]);
 
   function getNavbarStyle() {
     const defaultColors = { white: '#ffffff', primary: '#000000' }; // Define fallback colors
@@ -31,7 +36,6 @@ function App() {
         return { backgroundColor: safeColors.background, color: 'black' };
     }
   }
-  
 
   return (
     <div>
