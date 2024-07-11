@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { colors } from '../assets/colors';
 import WikiImage from '../assets/Wiki.png';
 import ArrowDownIcon from '../assets/arrow-down-icon.png';
@@ -13,9 +13,14 @@ import PageSubtitleComponent from '../components/PageSubtitleComponent';
 
 import './Home.css'
 import { styles } from '../assets/styles';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <div>
       <div className="hero-container">
@@ -50,6 +55,7 @@ function Home() {
             </div>
         </div>
       </div>
+      <ScrollToTop smooth color={colors.primary} style={{ borderRadius: '100%' }}/>
     </div>
   );
 }

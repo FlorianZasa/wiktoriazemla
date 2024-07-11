@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PageSubtitleComponent from '../PageSubtitleComponent';
 import { colors } from '../../assets/colors';
 
 import ProcessOfCards from '../../assets/data/images/process2_card_process.png'
 import Solution from '../../assets/data/images/project2_solution.png'
 
+import 'react-medium-image-zoom/dist/styles.css'
+import ImageModal from '../ImageModal';
+import ScrollToTop from 'react-scroll-to-top';
+
 function Project2Content() {
+    const [modalImage, setModalImage] = useState(null);
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
+
     return (
         <div>
+            {modalImage && (
+                <ImageModal
+                    src={modalImage.src} 
+                    alt={modalImage.alt} 
+                    onClose={() => setModalImage(null)} 
+                />
+            )}
             <div className="subcontainer">
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem' }}>
                     <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
@@ -31,8 +48,8 @@ function Project2Content() {
 
             <div className="subcontainer">
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4rem' }}>
-                        <PageSubtitleComponent title="Process of the cards" size="small" centered />
-                        <img src={ProcessOfCards} alt="ProcessOfCards" style={{ width: '100%', objectFit: 'cover' }} />
+                    <PageSubtitleComponent title="Process of the cards" size="small" centered />
+                    <img src={ProcessOfCards} alt="ProcessOfCards" style={{ width: '100%', objectFit: 'cover' }} onClick={() => setModalImage({src: ProcessOfCards, alt: "ProcessOfCards"})} />
                 </div>
             </div>
 
@@ -51,11 +68,11 @@ function Project2Content() {
                         </p>
                     </div>
                     <div style={{width: '35rem'}}>
-                        <img src={Solution} alt="solution design" style={{ width: '100%', objectFit: 'cover' }} />
+                        <img src={Solution} alt="solution design" style={{ width: '100%', objectFit: 'cover' }} onClick={() => setModalImage({src: Solution, alt: "Solution"})} />
                     </div>
                 </div>
             </div>
-
+            <ScrollToTop smooth color={colors.primary} style={{ borderRadius: '100%' }}/>
         </div>
     );
 }

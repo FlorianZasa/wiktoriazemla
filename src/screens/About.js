@@ -15,6 +15,8 @@ import ButtonComponent from '../components/ButtonComponent';
 import { styles } from '../assets/styles';
 import SkillCardComponent from '../components/SkillCardComponent';
 import ModalComponent from '../components/ModalComponent';
+import ScrollToTop from 'react-scroll-to-top';
+import { colors } from '../assets/colors';
 
 function About() {
     const [isCodeModalOpen, setIsCodeModalOpen] = useState(false)
@@ -29,6 +31,10 @@ function About() {
         setCode(e.target.value);
         setError(null);
     }
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
 
     function handleCodeSubmit(e) {
         e.preventDefault();
@@ -180,6 +186,7 @@ function About() {
                     </tr>
                 </table>
             </div>
+            <ScrollToTop smooth color={colors.primary} style={{ borderRadius: '100%' }}/>
         </div>
     )
 }

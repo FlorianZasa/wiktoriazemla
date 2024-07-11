@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './screens/Home';
 import About from './screens/About';
 import MenuBarComponent from './components/MenuBarComponent';
@@ -18,8 +18,12 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    setCurrentRoute(location.pathname);
+    ReactGA.send({hitType: "pageview", page: window.location.pathname })
   }, [location])
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   function getNavbarStyle() {
     const defaultColors = { white: '#ffffff', primary: '#000000' }; // Define fallback colors
