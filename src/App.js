@@ -15,6 +15,7 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0,0)
+    setCurrentRoute(location.pathname)
   }, [])
 
   function getNavbarStyle() {

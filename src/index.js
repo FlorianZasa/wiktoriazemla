@@ -12,6 +12,10 @@ import '@fontsource/istok-web/700.css';
 import '@fontsource/istok-web/700-italic.css'; 
 import applyColors from './utils/applyColors';
 
+import PiwikPro from '@piwikpro/react-piwik-pro';
+
+PiwikPro.initialize('1f3fcf65-8739-405f-b7bc-eceda500dfed', 'https://wiktoriazemla.piwik.pro');
+
 applyColors();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
