@@ -37,6 +37,9 @@ function FooterComponent() {
         <div style={{display: 'flex', alignItems: 'center', gap: '1.5rem', color: colors.background }}>
             &copy; 2024 Wiktoria Zemla
         </div>
+        <div>
+            <Link style={{ color: colors.background }}>Privacy</Link>
+        </div>
 
 
 

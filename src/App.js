@@ -6,20 +6,12 @@ import MenuBarComponent from './components/MenuBarComponent';
 import FooterComponent from './components/FooterComponent';
 import { useEffect, useState } from 'react';
 import { colors } from './assets/colors';
-import ReactGA from 'react-ga4';
 import Project from './screens/Project';
 
 
 function App() {
-  ReactGA.initialize('G-LNG96WYLYF');
-  ReactGA.initialize('G-48F3DTVXHS');
-
   const [currentRoute, setCurrentRoute] = useState("/");
   const location = useLocation();
-
-  useEffect(() => {
-    ReactGA.send({hitType: "pageview", page: window.location.pathname })
-  }, [location])
 
   useEffect(() => {
     window.scrollTo(0,0)
