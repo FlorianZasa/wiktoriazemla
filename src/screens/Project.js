@@ -29,7 +29,7 @@ function Project() {
     }, [id]);
 
     if (!project) {
-        return <div>Loading...</div>;
+        return <div className='container'>Oops - Yet to be done</div>;
     }
 
     return (
@@ -50,9 +50,11 @@ function Project() {
                     <p><strong>Deliverables:</strong></p>
                     <span>{project.deliverables.join(', ')}</span>
                 </div>
-                <div style={{minWidth: '200px'}}>
-                    <a href={project.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
-                </div>
+                {project.website &&
+                    <div style={{minWidth: '200px'}}>
+                        <a href={project.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
+                    </div>
+                }
             </div>
 
 

@@ -17,7 +17,7 @@
         "expertise": "Product Design",
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
-        "website": "",
+        "website": null,
         "meta": "Thesis Project",
         "year": "2024",
         "imagePath": "assets/data/images/project2.png"

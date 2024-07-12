@@ -21,11 +21,15 @@ function App() {
 
   useEffect(() => {
     PageViews.trackPageView();
+    setCurrentRoute(location.pathname)
+    getNavbarStyle()
   }, [location]);
 
   function getNavbarStyle() {
     const defaultColors = { white: '#ffffff', primary: '#000000' }; // Define fallback colors
     const safeColors = colors || defaultColors;
+
+    console.log(currentRoute);
     
     switch (currentRoute) {
       case '/':
