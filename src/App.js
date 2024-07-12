@@ -28,22 +28,23 @@ function App() {
   function getNavbarStyle() {
     const defaultColors = { white: '#ffffff', primary: '#000000' }; // Define fallback colors
     const safeColors = colors || defaultColors;
+    const border = 'none';
 
     console.log(currentRoute);
     
     switch (currentRoute) {
       case '/':
-        return { backgroundColor: safeColors.background, color: 'black' };
+        return { backgroundColor: safeColors.background, color: 'black', border: border };
       case '/about':
-        return { backgroundColor: safeColors.primary, color: safeColors.white };
+        return { backgroundColor: safeColors.primary, color: safeColors.white, border: '2px solid white' };
       default:
-        return { backgroundColor: safeColors.background, color: 'black' };
+        return { backgroundColor: safeColors.background, color: 'black', border: border };
     }
   }
 
   return (
     <div>
-      <MenuBarComponent backgroundColor={getNavbarStyle().backgroundColor} textColor={getNavbarStyle().color} />
+      <MenuBarComponent backgroundColor={getNavbarStyle().backgroundColor} textColor={getNavbarStyle().color} border={getNavbarStyle().border} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
