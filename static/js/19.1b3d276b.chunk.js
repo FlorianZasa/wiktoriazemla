@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiktoria_zemla_portfolio=self.webpackChunkwiktoria_zemla_portfolio||[]).push([[19],{19:(e,o,i)=>{e.exports=i.p+"static/media/project4_overview.0cf25e8bb3d35dde7050.png"}}]);
