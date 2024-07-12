@@ -29,8 +29,6 @@ function App() {
     const defaultColors = { white: '#ffffff', primary: '#000000' }; // Define fallback colors
     const safeColors = colors || defaultColors;
     const border = 'none';
-
-    console.log(currentRoute);
     
     switch (currentRoute) {
       case '/':
