@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6769cb33.css",
-    "main.js": "/static/js/main.18b75f4b.js",
+    "main.css": "/static/css/main.e35e9e4a.css",
+    "main.js": "/static/js/main.c225feaa.js",
     "static/js/598.8f57df27.chunk.js": "/static/js/598.8f57df27.chunk.js",
     "static/js/240.6749da13.chunk.js": "/static/js/240.6749da13.chunk.js",
     "static/js/64.bfa1b2a4.chunk.js": "/static/js/64.bfa1b2a4.chunk.js",
@@ -94,8 +94,8 @@
     "static/media/istok-web-cyrillic-ext-700-normal.woff": "/static/media/istok-web-cyrillic-ext-700-normal.1d9e187c5149933b4e36.woff",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "index.html": "/index.html",
-    "main.6769cb33.css.map": "/static/css/main.6769cb33.css.map",
-    "main.18b75f4b.js.map": "/static/js/main.18b75f4b.js.map",
+    "main.e35e9e4a.css.map": "/static/css/main.e35e9e4a.css.map",
+    "main.c225feaa.js.map": "/static/js/main.c225feaa.js.map",
     "598.8f57df27.chunk.js.map": "/static/js/598.8f57df27.chunk.js.map",
     "714.7a1323e7.chunk.css.map": "/static/css/714.7a1323e7.chunk.css.map",
     "714.525a2760.chunk.js.map": "/static/js/714.525a2760.chunk.js.map",
@@ -116,7 +116,7 @@
     "4.33adcc20.chunk.js.map": "/static/js/4.33adcc20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6769cb33.css",
-    "static/js/main.18b75f4b.js"
+    "static/css/main.e35e9e4a.css",
+    "static/js/main.c225feaa.js"
   ]
 }
