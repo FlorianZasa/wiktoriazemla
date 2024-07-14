@@ -3,11 +3,12 @@
       {
         "id": 1,
         "name": "E-learning For Kids (EFK)",
+        "type": "Serious Games, E-learning, Education",
         "expertise": "Content Designer",
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["Content Assets"],
         "website": "Math World - EFK",
-        "link": "https://abc",
+        "link": "https://content-fill-math-world.e-learningforkids.org/en/grade-k/map",
         "meta": "Klare Koek",
         "year": "2022/Present",
         "imagePath": "assets/data/images/project1.png"
@@ -15,6 +16,7 @@
       {
         "id": 2,
         "name": "Quizzy - Improve communication",
+        "type": "Serious Games, Education, Stimulates Conversations",
         "expertise": "Product Design",
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
@@ -27,6 +29,7 @@
       {
         "id": 3,
         "name": "Bring Otto Home",
+        "type": "Serious Games, E-learning, Education",
         "expertise": "UX/UI Designer, Art Designer",
         "platforms": ["ipadOS"],
         "deliverables": ["UI Screens", "Art Designes", "Prototypes"],
@@ -39,11 +42,12 @@
       {
         "id": 4,
         "name": "Mediajungle - Redesign",
+        "type": "Redesign, Accessibility",
         "expertise": "UX/UI Design",
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
         "website": "Mediajungle",
-        "link": "https://abc",
+        "link": "https://mediajungle.eu/",
         "meta": "Internship: Web Design",
         "year": "2023",
         "imagePath": "assets/data/images/project4.png"

@@ -51,10 +51,10 @@ function Home() {
         <div style={{width: "100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2rem', padding: '2rem 0 2rem 0'}}>
             <PageSubtitleComponent title="My Work" size='small' centered />
             <div className="project-grid-container">
-                <ProjectCardComponent to="/proj/1" img={<img src={Project1} alt={"E-Learning For Kids (EFK)"} style={{width: '100%'}} />} heading={"E-Learning For Kids (EFK)"} />
-                <ProjectCardComponent to="/proj/2" img={<img src={Project2} alt={"Project2"} style={{width: '100%'}} />} heading={"Quizzy - Improve Communication"} />
-                <ProjectCardComponent to="/proj/3" img={<img src={Project3} alt={"Project3"}  style={{width: '100%'}} />} heading={""} />
-                <ProjectCardComponent to="/proj/4" img={<img src={Project4} alt={"Project4"} style={{width: '100%'}} />} heading={"Mediajungle - Redesign"} />
+                <ProjectCardComponent to="/proj/1" img={<img src={Project1} alt={"E-Learning For Kids (EFK)"} style={{width: '100%'}} />} heading={"E-Learning For Kids (EFK)"} text={"Serious Games, E-learning, Education"} />
+                <ProjectCardComponent to="/proj/2" img={<img src={Project2} alt={"Project2"} style={{width: '100%'}} />} heading={"Quizzy - Improve Communication"} text={"Serious Games, Education, Stimulates Conversations"} />
+                <ProjectCardComponent to="/proj/3" img={<img src={Project3} alt={"Project3"}  style={{width: '100%'}} />} heading={"Bring Otto Home"} text={"Serious Games, E-learning, Education"} />
+                <ProjectCardComponent to="/proj/4" img={<img src={Project4} alt={"Project4"} style={{width: '100%'}} />} heading={"Mediajungle - Redesign"} text={"Redesign, Accessibility"} />
             </div>
         </div>
       </div>

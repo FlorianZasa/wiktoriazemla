@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function ProjectCardComponent({ to, img, heading }) {
+function ProjectCardComponent({ to, img, heading, text }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -23,27 +23,30 @@ function ProjectCardComponent({ to, img, heading }) {
       }}>
         {img}
       </div>
-      {isHovered && (
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          color: 'white',
-          textAlign: 'center',
-          padding: '20px',
-          transition: 'opacity 0.3s ease',
-          opacity: isHovered ? 1 : 0
-        }}>
-          <h2>{heading}</h2>
-          <p>Click for more information!</p>
-        </div>
-      )}
+      <div style={{
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: '50%',
+        background: 'linear-gradient(to top, black, transparent)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'start',
+        color: 'white',
+        textAlign: 'center',
+        padding: '2rem',
+        transition: 'opacity 0.3s ease',
+        opacity: 1 
+      }}>
+         {isHovered ? (<p>> Click to get more information :)</p>) : (
+          <>
+            <h3>{heading}</h3>
+            <p>{text}</p>
+          </>
+         )}
+      </div>
     </Link>
   );
 }

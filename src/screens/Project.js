@@ -36,8 +36,10 @@ function Project() {
 
     return (
         <div className="container">
-            <p style={{color: colors.text, fontSize:'12px'}}>{project.meta} - {project.year}</p>
-            <PageSubtitleComponent title={project.name} />
+            <div style={{padding: '1rem 0 1rem 0'}}>
+                <span style={{color: colors.text, fontSize:'12px'}}>{project.meta} - {project.year}</span>
+                <PageSubtitleComponent title={project.name} />
+            </div>
          
             <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alinItems: 'center', marginBottom: '2rem', gap: '1rem'}}>
                 <div style={{minWidth: '200px'}}>
@@ -55,7 +57,7 @@ function Project() {
         
                 <div style={{minWidth: '200px'}}>
                     <p><strong>Website:</strong></p>
-                    <a href={project.website} target="_blank" rel="noopener noreferrer">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" style={{color: colors.text}}>
                         {project.website ? project.website : "-"}
                     </a>
                 </div>

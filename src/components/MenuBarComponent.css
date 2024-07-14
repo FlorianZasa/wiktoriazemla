@@ -4,10 +4,11 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     justify-content: flex-end;
+    gap: 1rem
 }
 
 .menu-btn {
-    padding: .4rem 1.2rem .4rem 1.2rem;
+    padding: .4rem 1rem .4rem 1rem;
     border-radius: 10px;
     text-decoration: none;
 }
