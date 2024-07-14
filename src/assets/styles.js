@@ -3,7 +3,8 @@ import { colors } from "./colors";
 export const styles = {
     text: {
         color: colors.text,
-        fontSize: '20px'
+        fontSize: '18px',
+        fontWeight: 100
     },
     button: {
         backgroundColor: colors.primary,

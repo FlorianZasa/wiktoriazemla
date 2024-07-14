@@ -7,6 +7,7 @@
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["Content Assets"],
         "website": "Math World - EFK",
+        "link": "https://abc",
         "meta": "Klare Koek",
         "year": "2022/Present",
         "imagePath": "assets/data/images/project1.png"
@@ -18,9 +19,22 @@
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
         "website": null,
+        "link": null,
         "meta": "Thesis Project",
         "year": "2024",
         "imagePath": "assets/data/images/project2.png"
+      },
+      {
+        "id": 3,
+        "name": "Bring Otto Home",
+        "expertise": "UX/UI Designer, Art Designer",
+        "platforms": ["ipadOS"],
+        "deliverables": ["UI Screens", "Art Designes", "Prototypes"],
+        "website": null,
+        "link": null,
+        "meta": "Internship: Web design",
+        "year": "2023",
+        "imagePath": "assets/data/images/project3.png"
       },
       {
         "id": 4,
@@ -29,9 +43,10 @@
         "platforms": ["MacOS", "Windows"],
         "deliverables": ["UI Screens", "Prototypes", "Game Assets"],
         "website": "Mediajungle",
+        "link": "https://abc",
         "meta": "Internship: Web Design",
         "year": "2023",
-        "imagePath": "assets/data/images/project1.png"
+        "imagePath": "assets/data/images/project4.png"
       }
     ]
   }

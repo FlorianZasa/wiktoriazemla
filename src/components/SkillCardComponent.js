@@ -13,10 +13,26 @@ function SkillCardComponent({imgSrc, title, text}) {
         borderRadius: '14px',
         display: 'flex',
         flexDirection: 'column',
-        maxWidth: 300
+        maxWidth: 340,
+        gap: '1rem'
       }}>
-        <img src={imgSrc} alt="Alternative" style={{ height: '200px', width: 'auto', objectFit: 'cover' }} />
-        <PageSubtitleComponent title={title} size={'small'} centered />
+        <div style={{ 
+          width: '100%', 
+          height: '200px',
+          overflow: 'hidden'
+        }}>
+          <img 
+            src={imgSrc} 
+            alt={title} 
+            style={{ 
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain',
+              objectPosition: 'center'
+            }} 
+          />
+        </div>
+        <PageSubtitleComponent title={title} size={'mini'} centered  />
         <p style={{fontSize: '16px'}}>{text}</p>
       </div>
     )

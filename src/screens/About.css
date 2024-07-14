@@ -9,11 +9,22 @@
     flex: 1;
     min-width: 300px;
   }
+
+  .skill-text {
+    width: 60%;
+  }
   
   .profile-image {
     width: 26%;
     border: 1rem solid var(--secondary-color);
     border-radius: 50%;
+  }
+
+  .timeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   @media screen and (max-width: 700px) {
@@ -24,13 +35,22 @@
     .profile-image {
       width: 70%;
       max-width: 200px;
-      margin-top: 2rem; /* Add margin for spacing when wrapped */
+      margin-top: 2rem;
     }
 
-    .deko-circle {
-      left: -80;
-      top: -20;
+    .skill-text {
+      width: 100%;
     }
 
+    .timeContainer {
+      flex-direction: column;
+    }
+
+    .timeContainer > p {
+      text-align: right;
+      margin-left: 0;
+      padding-left: 0;
+      margin-top: '1rem'
+    }
   }
   

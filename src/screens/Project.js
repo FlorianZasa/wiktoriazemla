@@ -4,6 +4,8 @@ import projectData from '../assets/data/projects/projects.json'
 import PageSubtitleComponent from '../components/PageSubtitleComponent';
 import { colors } from '../assets/colors';
 
+import './Project.css'
+
 function Project() {
     const { id } = useParams(); // Get the project ID from the URL
     const [project, setProject] = useState(null)
@@ -50,11 +52,13 @@ function Project() {
                     <p><strong>Deliverables:</strong></p>
                     <span>{project.deliverables.join(', ')}</span>
                 </div>
-                {project.website &&
-                    <div style={{minWidth: '200px'}}>
-                        <a href={project.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
-                    </div>
-                }
+        
+                <div style={{minWidth: '200px'}}>
+                    <p><strong>Website:</strong></p>
+                    <a href={project.website} target="_blank" rel="noopener noreferrer">
+                        {project.website ? project.website : "-"}
+                    </a>
+                </div>
             </div>
 
 

@@ -94,27 +94,27 @@ function About() {
             </ModalComponent>
          
             <div className="subcontainer">
-                <div className="content">
-                    <div className="description" style={styles.text}>
-                        <PageSubtitleComponent title="Who am I exactly?" />
+                
+                <div className="content" style={{display: 'flex', flexDirection: 'row'}}>
+                    <div className="description" style={{...styles.text, display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
+                        <PageSubtitleComponent title="Who am I exactly?" size="small" />
                         <span style={styles.text}>I am a 22-year-old recent graduate with a degree in Communication and Multimedia Design from a Dutch university, specializing in UX and UI design. Originally from Poland, I moved to the Netherlands at 14, learning Dutch while adapting to a new culture and education system. This experience taught me resilience and adaptability, qualities that have shaped my approach to design.
                             <br></br>
                             <br></br>
                             With hands-on experience from real-world projects and my internship in web design, I’ve developed 
                             e-learning apps, redesigned websites, and built brand identities. Known for my creativity and dedication, I’m excited to start my professional journey in UX/UI design, continually refining my skills in a dynamic, collaborative environment
                         </span>
+                        <br></br>
+                        <ButtonComponent text="Download my CV" onClick={() => handleDownload()} />
                     </div>
-                    <img src={Wiki2Image} className="profile-image" alt="Profile" />
-                </div>
-                <div style={{display: 'flex', gap: '2rem'}}>
-                    <ButtonComponent text="Download my CV" onClick={() => handleDownload()} />
+                    <img src={Wiki2Image} className="profile-image" alt="Profile" style={{width: '20rem'}} />
                 </div>
             </div>
 
             <div className="subcontainer">
-                <PageSubtitleComponent title="My Skills" centered />
+                <PageSubtitleComponent title="My Skills" size='small' centered />
                 <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingBottom: '2rem'}}>
-                    <p style={{ ...styles.text, width: '70%' }}>I specialize in UX/UI design, conducting user research, creating wireframes and prototypes, and applying visual design principles. My work enhances user engagement and consistency across responsive web and mobile interfaces.</p>
+                    <p className="skill-text">I specialize in UX/UI design, conducting user research, creating wireframes and prototypes, and applying visual design principles. My work enhances user engagement and consistency across responsive web and mobile interfaces.</p>
                 </div>
                 
                 <div style={{display: 'flex', gap:'2rem', flexWrap: 'wrap', justifyContent: 'center'}}>
@@ -128,64 +128,61 @@ function About() {
             </div>
 
             <div className="subcontainer">
-                <PageSubtitleComponent title={"Education"} centered />
-                <table style={{borderSpacing: '0 2rem'}}>
-                    <tr>
-                        <td>
-                            <div>
-                                <p style={{fontSize: '20px', fontWeight: 800}}>Higher Education</p>
-                                <span style={{fontSize: '19px'}}>CSG Bogerman, Balk/Sneek</span>
-                            </div>
-                        </td>
-                        <td style={{fontSize: '20px', fontWeight: 800}}>2016 - 2020</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p style={{fontSize: '20px', fontWeight: 800}}>Bachelor of Science - Communication & Multimedia Design</p>
-                                <span style={{fontSize: '19px'}}>NHL Stenden University of Applied Sciences, Leeuwarden</span>
-                                <ul>
-                                    <li style={{fontSize: '16px'}}><b>Minor 1: The Next Web </b>- Focused on UX/UI Design</li>
-                                    <li style={{fontSize: '16px'}}><b>Minor 2: The Next Web </b>- Focused on UX/UI Design</li>
-                                    <li style={{fontSize: '16px'}}><b>Minor 3: Game Development & 3D </b>- Focused on UX/UI Design</li>
-                                    <li style={{fontSize: '16px'}}><b>Minor 4: The Next Web </b>- Focused on UX/UI Design & Front-End</li>
-                                </ul>
-                            </div>
-                        </td>
-                        <td style={{fontSize: '20px', fontWeight: 800}}>2016 - 2020</td>
-                    </tr>
-                </table>
+                <PageSubtitleComponent title={"Work Experience"} size="small" centered />
+                <div style={{display: 'flex', flexDirection: 'column', gap: '2rem'}}>
+                    <div className="timeContainer">
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            <p style={{fontSize: '20px', fontWeight: 800}}>Higher Education</p>
+                            <span style={{fontSize: '19px'}}>CSG Bogerman, Balk/Sneek</span>
+                        </div>
+                        <p style={{fontSize: '20px', fontWeight: 800, justifySelf: 'right'}}>2016 - 2020</p>
+                    </div>
+
+                    <div className="timeContainer">
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            <p style={{fontSize: '20px', fontWeight: 800}}>Bachelor of Science - Communication & Multimedia Design</p>
+                            <span style={{fontSize: '19px'}}>NHL Stenden University of Applied Sciences, Leeuwarden</span>
+                            <ul>
+                                <li style={{fontSize: '16px'}}><b>Minor 1: The Next Web </b>- Focused on UX/UI Design</li>
+                                <li style={{fontSize: '16px'}}><b>Minor 2: The Next Web </b>- Focused on UX/UI Design</li>
+                                <li style={{fontSize: '16px'}}><b>Minor 3: Game Development & 3D </b>- Focused on UX/UI Design</li>
+                                <li style={{fontSize: '16px'}}><b>Minor 4: The Next Web </b>- Focused on UX/UI Design & Front-End</li>
+                            </ul>
+                        </div>
+                        <p style={{fontSize: '20px', fontWeight: 800}}>2023 - 2023</p>
+                    </div>
+                </div>
             </div>
 
             <div className="subcontainer">
-                <PageSubtitleComponent title={"Work Experience"} centered />
-                <table style={{borderSpacing: '0 2rem'}}>
-                    <tr>
-                        <td>
-                            <div>
-                                <p style={{fontSize: '20px', fontWeight: 800}}>Internship</p>
-                                <span style={{fontSize: '19px'}}>Web-design, Klare Koek, Leeuwarden</span>
-                            </div>
-                        </td>
-                        <td style={{fontSize: '20px', fontWeight: 800}}>2023 - 2023</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p style={{fontSize: '20px', fontWeight: 800}}>Content Designer</p>
-                                <span style={{fontSize: '19px'}}>E-learning Platform For Kids (EFK), Klare Koek, Leeuwarden</span>
-                                <ul>
-                                    <li style={{fontSize: '16px'}}><b>Minor 1: The Next Web </b>- Focused on UX/UI Design</li>
-                                    <li style={{fontSize: '16px'}}><b>Minor 2: The Next Web </b>- Focused on UX/UI Design</li>
-                                    <li style={{fontSize: '16px'}}><b>Minor 3: Game Development & 3D </b>- Focused on UX/UI Design</li>
-                                    <li style={{fontSize: '16px'}}><b>Minor 4: The Next Web </b>- Focused on UX/UI Design & Front-End</li>
-                                </ul>
-                            </div>
-                        </td>
-                        <td style={{fontSize: '20px', fontWeight: 800}}>2022 -  Present</td>
-                    </tr>
-                </table>
+                <PageSubtitleComponent title={"Work Experience"} size="small" centered />
+                <div style={{display: 'flex', flexDirection: 'column', gap: '2rem'}}>
+                    <div className="timeContainer">
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            <p style={{fontSize: '20px', fontWeight: 800}}>Internship</p>
+                            <span style={{fontSize: '19px'}}>Web-design, Klare Koek, Leeuwarden</span>
+                        </div>
+                        <p style={{fontSize: '20px', fontWeight: 800}}>2023 - 2023</p>
+                    </div>
+
+                    <div className="timeContainer">
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            <p style={{fontSize: '20px', fontWeight: 800}}>Content Designer</p>
+                            <span style={{fontSize: '19px'}}>E-learning Platform For Kids (EFK), Klare Koek, Leeuwarden</span>
+                            <ul>
+                                <li style={{fontSize: '16px'}}><b>Minor 1: The Next Web </b>- Focused on UX/UI Design</li>
+                                <li style={{fontSize: '16px'}}><b>Minor 2: The Next Web </b>- Focused on UX/UI Design</li>
+                                <li style={{fontSize: '16px'}}><b>Minor 3: Game Development & 3D </b>- Focused on UX/UI Design</li>
+                                <li style={{fontSize: '16px'}}><b>Minor 4: The Next Web </b>- Focused on UX/UI Design & Front-End</li>
+                            </ul>
+                        </div>
+                        <p style={{fontSize: '20px', fontWeight: 800}}>2022 -  Present</p>
+                    </div>
+                </div>
             </div>
+
+
+            
             <ScrollToTop smooth color={colors.primary} style={{ borderRadius: '100%' }}/>
         </div>
     )

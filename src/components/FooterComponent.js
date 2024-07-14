@@ -20,11 +20,11 @@ function FooterComponent() {
     }}>
 
         <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-            <a href="https://www.instagram.com/zemla_wiktoria/" target="_blank">
-                <img src={InstagramImg} height={40} />
+            <a href="https://www.linkedin.com/in/wiktoria-zemla-00a20b252/?originalSubdomain=nl" target="_blank" rel="noreferrer">
+                <img src={LinkedInImg} height={40} alt="Linked In" />
             </a>
-            <a href="https://www.linkedin.com/in/wiktoria-zemla-00a20b252/?originalSubdomain=nl" target="_blank">
-                <img src={LinkedInImg} height={40} />
+            <a href="https://www.instagram.com/zemla_wiktoria/" target="_blank" rel="noreferrer">
+                <img src={InstagramImg} height={40} alt="Instagram" />
             </a>
         </div>
 
