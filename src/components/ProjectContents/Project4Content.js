@@ -11,6 +11,7 @@
     import Process2 from '../../assets/data/images/project4_process_2.png'
     import Process3 from '../../assets/data/images/project4_process_3.png'
     import Result from '../../assets/data/images/project4_result.png'
+import { styles } from '../../assets/styles';
 
 
     function Project4Content() {
@@ -39,7 +40,10 @@
                             </p>
                         </div>
                         <div style={{width: '35rem'}}>
-                            <img src={Introduction} alt="ProcessOfCards" style={{ width: '100%', objectFit: 'cover' }} onClick={() => setModalImage({src: Introduction, alt: "Introduction"})} />
+                            <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
+                                <img src={Introduction} alt="Intro" style={{ width: '100%', objectFit: 'cover' }} onClick={() => setModalImage({src: Introduction, alt: "Introduction"})} />
+                                <span style={{...styles.text, fontSize: '14px'}}>*This image is showing the old look of the website</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +59,7 @@
                             </p>
                         </div>
                         <div style={{width: '35rem', maxWidth: '100%'}}>
-                            <img src={Overview} alt="Overview" style={{ width: '100%', objectFit: 'cover' }} onClick={() => setModalImage({src: Overview, alt: "Overview"})} />
+            
                         </div>
                     </div>
                 </div>
