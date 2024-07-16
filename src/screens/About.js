@@ -36,28 +36,33 @@ function About() {
         window.scrollTo(0,0)
       }, [])
 
-    function handleCodeSubmit(e) {
+      function handleCodeSubmit(e) {
         e.preventDefault();
         if (code === process.env.REACT_APP_SECRET_CODE) {
-            fetch("https://raw.githubusercontent.com/FlorianZasa/wiktoriazemla/master/files/test.txt")
-                .then(response => response.blob())
-                .then(blob => {
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.style.display = 'none';
-                    a.href = url;
-                    a.download = 'test.txt';
-                    document.body.appendChild(a);
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                    setIsCodeModalOpen(false);
-                })
-                .catch(() => setError('Download failed. Please try again.'));
+          fetch(`https://raw.githubusercontent.com/FlorianZasa/wiktoriazemla/master/${process.env.REACT_APP_CV_FILE}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.blob();
+            })
+            .then(blob => {
+              const url = window.URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.style.display = 'none';
+              a.href = url;
+              a.download = 'CV_Wiktoria_Zemla.pdf';
+              document.body.appendChild(a);
+              a.click();
+              window.URL.revokeObjectURL(url);
+              setIsCodeModalOpen(false);
+            })
+            .catch((e) => setError('Download failed. Please try again.', e));
         } else {
-            setError('Incorrect Password!')
-            setCode('')
+          setError('Incorrect Password!');
+          setCode('');
         }
-    }
+      }
 
     useEffect(() => {
         setCode(null)

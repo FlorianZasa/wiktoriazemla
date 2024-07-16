@@ -23,7 +23,7 @@ function FooterComponent() {
             <a href="https://www.linkedin.com/in/wiktoria-zemla-00a20b252/?originalSubdomain=nl" target="_blank" rel="noreferrer">
                 <img src={LinkedInImg} height={40} alt="Linked In" />
             </a>
-            <a href="https://www.instagram.com/zemla_wiktoria/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/wiktoria_designwork" target="_blank" rel="noreferrer">
                 <img src={InstagramImg} height={40} alt="Instagram" />
             </a>
         </div>
