@@ -45,7 +45,7 @@ function Project1Content() {
 
             <div className="subcontainer">
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '4rem' }}>
-                    <div style={{minWidth: '300px', flex: 1}}>
+                    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                         <PageSubtitleComponent title="Responsibilities" size="small" />
                         <p style={{ color: colors.text }}>In my role on the E-Learning for Kids (EFK) modernization project, I focused on updating educational content to enhance learning experiences for children. EFK features 6 Grades along with a map with 8 levels, each containing around 6 courses on specific topics, designed to educate kids through interactive modules.</p>
                         <br></br><br></br>

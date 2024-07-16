@@ -52,7 +52,7 @@ import { styles } from '../../assets/styles';
 
                 <div className="subcontainer">
                     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '4rem' }}>
-                        <div style={{minWidth: '300px', flex: 1}}>
+                        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                             <PageSubtitleComponent title="Problem Overview" size="small" />
                             <p style={{ color: colors.text }}>
                                 The main issues with the old Mediajungle website were its outdated design, disorganized content, and poor navigation. The website, initially created for the Mediajungle board game launched in 2017, struggled to accommodate the growing number of products and services offered. As a result, potential customers found it challenging to navigate the site, access relevant information, and understand the full range of Mediajungle's offerings. This confusion hindered the ability to attract and retain customers, ultimately affecting the business's growth and impact.
@@ -100,7 +100,7 @@ import { styles } from '../../assets/styles';
 
                 <div className="subcontainer">
                     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '4rem' }}>
-                        <div style={{minWidth: '300px', flex: 1}}>
+                        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', color: colors.text, minWidth: '300px', flex: 1}}>
                             <PageSubtitleComponent title="Result" size="small" />
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                                 <div style={{ color: colors.text }}>To address these issues, I conducted thorough user research to understand the needs and behaviors of current and potential customers. This research informed the development of wireframes and prototypes to visualize a new layout and navigation structure. The redesign focused on creating a clean, modern interface that aligns with Mediajungle’s branding and appeals to a diverse audience. I collaborated with Mediajungle's co-creators responsible for the content to streamline and update the website’s information, ensuring that product and service details were clearly organized. This new structure allows users to navigate the site intuitively and find relevant information quickly. The redesigned website is now user-friendly, visually appealing, and effectively supports Klare Koek’s goal of making education and learning more enjoyable through serious games.</div>
