@@ -38,7 +38,7 @@ function FooterComponent() {
             &copy; 2024 Wiktoria Zemla
         </div>
         <div>
-            <Link style={{ color: colors.background }}>Privacy</Link>
+            <Link style={{ color: colors.background }} to="/privacy">Privacy</Link>
         </div>
 
 

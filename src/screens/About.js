@@ -133,7 +133,7 @@ function About() {
             </div>
 
             <div className="subcontainer">
-                <PageSubtitleComponent title={"Work Experience"} size="small" centered />
+                <PageSubtitleComponent title={"Education"} size="small" centered />
                 <div style={{display: 'flex', flexDirection: 'column', gap: '2rem'}}>
                     <div className="timeContainer">
                         <div style={{display: 'flex', flexDirection: 'column'}}>

@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { colors } from './assets/colors';
 import Project from './screens/Project';
 import { PageViews } from '@piwikpro/react-piwik-pro';
+import Privacy from './screens/Privacy';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/proj/:id" element={<Project />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <FooterComponent />
